@@ -29,6 +29,6 @@ This MATLAB function reads the LAMMPS trajectory dump file, unwraps periodic bou
     * `T`: Temperature.
 * **Output files:**
     * A file ending with `.msd` containing the time and MSD.
-    * A file ending with `.tauD` containing the temperature (T), relaxation time (τ), and diffusion coefficient (D). (This data is not used for our manuscript as it is simply and estimation)
+    * A file ending with `.tauD` containing the temperature (T), relaxation time (τ), and diffusion coefficient (D). (This data is not used for our manuscript as it is simply and estimation. relaxation time is extracted from Fs)
     * A file ending with `.fs` containing the time, SISF, and overlap.
 
