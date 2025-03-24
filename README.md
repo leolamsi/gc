@@ -4,15 +4,16 @@ This repository contains the scripts necessary to perform molecular dynamics sim
 
 
 ## 1.  **Generate Input Files:**
-    * Use the python script `gen_init_ghost_nouniform.py` to generate the input file required for the LAMMPS simulation. This script creates the initialization file, defining particle pair interactions and particle positions.
+     Use the python script `gen_init_ghost_nouniform.py` to generate the input file required for the LAMMPS simulation. This script creates the initialization file, defining particle pair interactions and particle positions.
 ## 2.  **Run LAMMPS Simulation:**
-    * Execute the LAMMPS simulation using the script `run_sim.lmp`. This script is the primary LAMMPS input file that drives the simulation.
+     Execute the LAMMPS simulation using the script `run_sim.lmp`. This script is the primary LAMMPS input file that drives the simulation.
 ## 3.  **Analyze Simulation Data:**
-    * The following MATLAB scripts are used to analyze the simulation trajectory data:
-        * `trajread_leo.m`: This script reads the LAMMPS trajectory dump file, unwraps periodic boundary conditions, and calculates the mean squared displacement (MSD), relaxation time (τ), and diffusion coefficient (D). This script calls all the other MATLAB scripts. This is the only script that has to be run on MATLAB manually.
-        * `msdcal_leo.m`: This script calculates the MSD as a function of time.
-        * `D_from_msd.m`: This script calculates the diffusion coefficient (D) and relaxation time (τ) from the MSD data. 
-        * `fscal.m`: This script calculates the self-intermediate scattering function (SISF) and overlap. 
+    
+    The following MATLAB scripts are used to analyze the simulation trajectory data:
+         `trajread_leo.m`: This script reads the LAMMPS trajectory dump file, unwraps periodic boundary conditions, and calculates the mean squared displacement (MSD), relaxation time (τ), and diffusion coefficient (D). This script calls all the other MATLAB scripts. This is the only script that has to be run on MATLAB manually.
+         `msdcal_leo.m`: This script calculates the MSD as a function of time.
+         `D_from_msd.m`: This script calculates the diffusion coefficient (D) and relaxation time (τ) from the MSD data. 
+         `fscal.m`: This script calculates the self-intermediate scattering function (SISF) and overlap. 
 
 
 
